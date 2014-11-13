@@ -1,11 +1,14 @@
 # Kohana 3.3 PDO SQLite Driver
 
-Database config example:
+Small patch-module for Kohana that allows you to use SQLite database with PDO. It's simply override original
+Database_PDO method list_columns().
+
+## Database config example
 
 ```php
 return array(
     'default' => array(
-        'type'         => 'SQLite',
+        'type'         => 'PDO_SQLite',
         'connection'   => array(
             'dsn'        => 'sqlite:/home/database.sqlite',
             'persistent' => false,

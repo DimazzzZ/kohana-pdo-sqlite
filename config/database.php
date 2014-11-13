@@ -2,7 +2,7 @@
 
 return array(
     'default' => array(
-        'type'         => 'SQLite',
+        'type'         => 'PDO_SQLite',
         'connection'   => array(
             'dsn'        => 'sqlite:/home/database.sqlite',
             'persistent' => false,
